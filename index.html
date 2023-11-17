@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.header {width:100%}   
+
+.footer {width:100%;
+height:100px;
+background-color: white;}
+
+main{
+    display:flex;
+    gap: 20px;
+    flex-wrap:wrap;
+
+    justify-content: space-between;
+
+
+/*
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+*/      
+    
+
+}
+
+div {    background-color: antiquewhite;
+width:30vw;
+height:30vh;}
+
+body {
+  background-color: pink;
+}
+
+@media screen and (orientation:portrait) {
+  body {
+    background-color: green;
+  } 
+  main {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(400px);
+    } 
+
+    div {
+    width:100%;
+    margin:auto;
+    border:solid 1px red;
+}
+
+
+}
+
+
+
+</style>
+</head>
+<body>
+<main>
+
+<div class="header">Header</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div class="footer">Footer</div>
+    
+    
+</main>
+
+
+</body>
+</html>
